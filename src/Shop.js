@@ -4,7 +4,7 @@ import './App.css';
 
 function Shop() {
     const [dishes, setDishes] = useState(0);
-    const {id, image, description} = dataSlides[dishes];
+    const {image, description} = dataSlides[dishes];
 
     const [showMore, setShowMore] = useState(false);
 
