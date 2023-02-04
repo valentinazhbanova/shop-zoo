@@ -6,7 +6,7 @@ function CatalogItem({buyDishes}) {
             return(
                 <div key={id}>
                     <div  className='parentsItem'>
-                        <img src={image} width='370px' height='330px' />
+                        <img src={image} width='370px' height='330px' alt='Dish' />
                         <h3>{name}</h3>
                         <h3>{price} руб.</h3>
                     </div>
