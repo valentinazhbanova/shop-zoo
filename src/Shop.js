@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { dataSlides } from "./dataSlides";
+import { dataText } from "./dataText";
 import './App.css';
 
 function Shop() {
     const [dishes, setDishes] = useState(0);
-    const {image, description} = dataSlides[dishes];
+    const {image} = dataSlides[dishes];
+
+    const text = 'Компания «Блеск» – один из ведущих мировых производителей качественной посуды и аксессуаров для кухни. На сегодняшний день мы занимаем первое место по количеству магазинов посуды и товаров для дома в России. Мы используем новейшие технологии и разработки. Постоянно совершенствуем продукцию на основе анализа потребностей клиента. Продукция изготовлена только из качественных, экологически чистых материалов. Ежегодно компания выпускает более 100 новинок.'
 
     const [showMore, setShowMore] = useState(false);
 
@@ -41,7 +44,7 @@ function Shop() {
             <button onClick={nextDishes}>СЛЕДУЮЩИЙ</button>
         </div>
         <div className="cont">
-            <p>{showMore ? description : description.substring(0,171) +'.....'}
+            <p>{showMore ? text : text.substring(0,171) +'.....'}
             <button className="btnShowMore" onClick={() => setShowMore(!showMore)}>{showMore ? 'Свернуть' : 'См. далее'}</button>
             </p>
         </div>
