@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { dataSlides } from "./dataSlides";
-import { dataText } from "./dataText";
 import './App.css';
 
 function Shop() {
